@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func Test_insertionSort(t *testing.T) {
+func Test_selectionSort(t *testing.T) {
 	type args struct {
 		sequence []int
 	}
@@ -27,8 +27,8 @@ func Test_insertionSort(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := insertionSort(tt.args.sequence); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("insertionSort() = %v, want %v", got, tt.want)
+			if got := selectionSort(tt.args.sequence); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("selectionSort() = %v, want %v", got, tt.want)
 			}
 		})
 	}

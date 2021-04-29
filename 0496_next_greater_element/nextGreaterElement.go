@@ -13,7 +13,7 @@ func nextGreaterElement(nums1 []int, nums2 []int) []int {
 			continue
 		}
 		greater := -1
-		for ; j < l2; j++ {
+		for j++; j < l2; j++ {
 			if nums2[j] > v {
 				greater = nums2[j]
 				break
@@ -24,3 +24,5 @@ func nextGreaterElement(nums1 []int, nums2 []int) []int {
 
 	return nums1
 }
+
+//TODO optimize this problem using stack

@@ -26,7 +26,7 @@ func TestBubbleSort(t *testing.T) {
 	}
 
 	for _, tt := range tests {
-		out := bubbleSort(tt.in)
+		out := BubbleSort(tt.in)
 		for i, v := range out {
 			if v != tt.want[i] {
 				t.Errorf("got: %d, want: %d", v, tt.want[i])

@@ -1,6 +1,6 @@
 package sort
 
-func selectionSort(sequence []int) []int {
+func SelectionSort(sequence []int) []int {
 	l := len(sequence)
 	//执行l-1轮，每轮从未排序元素中选出一个最小值交换至未排序序列最左
 	for i := 0; i < l-1; i++ {

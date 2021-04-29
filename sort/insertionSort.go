@@ -1,6 +1,6 @@
 package sort
 
-func insertionSort(sequence []int) []int {
+func InsertionSort(sequence []int) []int {
 	l := len(sequence)
 	//将第一个元素作为基值进行排序
 	//第i轮前i个元素已经有序

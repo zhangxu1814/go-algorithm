@@ -1,6 +1,6 @@
 package sort
 
-func bubbleSort(sequence []int) []int {
+func BubbleSort(sequence []int) []int {
 	l := len(sequence)
 	//最坏情况下需要l-1轮，每轮排出一个最大值
 	for i := 0; i < l; i++ {

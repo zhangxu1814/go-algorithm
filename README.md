@@ -1,8 +1,3 @@
-# Algorithm 
-LeetCode of algorithms with golang solution
+### Introduction
 
-## environment
-
-wsl2: Ubuntu 20.04 
-go version: 1.16 
-editor: VS Code 
+Algorithm study notes

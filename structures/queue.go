@@ -1,4 +1,4 @@
-package queue
+package structures
 
 type Queue struct {
 	head   *node

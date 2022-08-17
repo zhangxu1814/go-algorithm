@@ -15,6 +15,9 @@ func TestString(t *testing.T) {
 	//a := s[1:][0]
 	//println(a)
 
-	a := "test" + "test"
-	println(a)
+	//a := "test" + "test"
+	//println(a)
+
+	cur := -1<<31 - 1
+	println(cur)
 }

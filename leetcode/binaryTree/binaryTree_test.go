@@ -1,7 +1,6 @@
 package binaryTree
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -22,7 +21,9 @@ func TestString(t *testing.T) {
 	//cur := -1<<31 - 1
 	//println(cur)
 
-	a := []int{5, 1, 1, 2, 0, 0}
-	sortArray(a)
-	fmt.Println(a)
+	//a := []int{5, 1, 1, 2, 0, 0}
+	//sortArray(a)
+	//fmt.Println(a)
+
+	print(2 << 2)
 }

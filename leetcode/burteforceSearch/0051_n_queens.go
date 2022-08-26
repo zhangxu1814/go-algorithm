@@ -1,7 +1,7 @@
-package binaryTree
+package burteforceSearch
 
 func solveNQueens(n int) [][]string {
-	res := make([][]string, n)
+	res := make([][]string, 0)
 	board := make([][]byte, n)
 	for i := 0; i < n; i++ {
 		tmp := make([]byte, n)
@@ -13,17 +13,17 @@ func solveNQueens(n int) [][]string {
 
 	var valid = func(row, col int) bool {
 		for i := 0; i < row; i++ {
-			if board[row][col] == 'Q' {
+			if board[i][col] == 'Q' {
 				return false
 			}
 		}
 		for i, j := row, col; i >= 0 && j >= 0; i, j = i-1, j-1 {
-			if board[row][col] == 'Q' {
+			if board[i][j] == 'Q' {
 				return false
 			}
 		}
-		for i, j := row, col; i < n && j < n; i, j = i+1, j+1 {
-			if board[row][col] == 'Q' {
+		for i, j := row, col; i >= 0 && j < n; i, j = i-1, j+1 {
+			if board[i][j] == 'Q' {
 				return false
 			}
 		}
@@ -34,7 +34,7 @@ func solveNQueens(n int) [][]string {
 		if row == n {
 			tmp := make([]string, n)
 			for i := 0; i < n; i++ {
-				tmp = append(tmp, string(board[i]))
+				tmp[i] = string(board[i])
 			}
 			res = append(res, tmp)
 			return

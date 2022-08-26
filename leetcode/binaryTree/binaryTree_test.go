@@ -28,11 +28,14 @@ func TestString(t *testing.T) {
 
 	//print(2 << 2)
 
-	s := []string{}
-	s1 := "aaaaaa"
-	s = append(s, s1)
-	s1 += "bbb"
-	s = append(s, s1)
-	fmt.Println(s)
+	//s := []string{}
+	//s1 := "aaaaaa"
+	//s = append(s, s1)
+	//s1 += "bbb"
+	//s = append(s, s1)
+	//fmt.Println(s)
+
+	s := []byte{'.', '.', 'Q', '.'}
+	fmt.Println(string(s))
 
 }
